@@ -52,6 +52,12 @@ dependencies {
     implementation 'org.mybatis:mybatis-spring:2.0.6'
 
     implementation 'jstl:jstl:1.2'
+
+    implementation 'org.aspectj:aspectjweaver:1.9.22'
+
+    implementation 'org.aspectj:aspectjrt:1.9.22'
+
+
 }
 
 test {
