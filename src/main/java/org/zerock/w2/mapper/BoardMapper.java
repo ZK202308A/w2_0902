@@ -1,8 +1,12 @@
 package org.zerock.w2.mapper;
 
 
+import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Update;
 import org.zerock.w2.vo.BoardVO;
 import org.zerock.w2.vo.PageRequest;
+
+import java.util.Optional;
 
 public interface BoardMapper  {
 
@@ -16,6 +20,8 @@ public interface BoardMapper  {
 
     int update(BoardVO vo);
 
-    BoardVO select(Long bno);
-	
+    Optional<BoardVO> select(Long bno);
+
+    @Update("update tbl_board set replyCnt = replyCnt + #{amount}  where bno = #{bno}")
+    int updateReplyCnt(@Param("bno") Long bno, @Param("amount") int amount);
 }

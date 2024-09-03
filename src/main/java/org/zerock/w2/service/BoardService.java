@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.zerock.w2.exception.DataNotFoundException;
 import org.zerock.w2.mapper.BoardMapper;
 import org.zerock.w2.vo.BoardVO;
 import org.zerock.w2.vo.PageRequest;
@@ -14,6 +15,7 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor
 @Transactional
+@Log4j2
 public class BoardService {
     private final BoardMapper boardMapper;
 
@@ -30,6 +32,11 @@ public class BoardService {
         return pageResponse;
     }
 
+    public BoardVO getOne(Long bno) {
+
+        return boardMapper.select(bno).orElseThrow(
+                () -> new DataNotFoundException(bno+" not found "));
+    }
 }
 
 
