@@ -8,6 +8,8 @@ public interface BoardMapper  {
 
     java.util.List<BoardVO> list(PageRequest pageRequest);
 
+    int count(PageRequest pageRequest);
+
     Long insert(BoardVO vo);
 
     int delete(Long bno);

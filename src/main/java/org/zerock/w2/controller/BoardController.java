@@ -19,9 +19,11 @@ public class BoardController {
     private final BoardService boardService;
 
     @GetMapping("list")
-    public void list( @ModelAttribute("pg") PageRequest pageRequest, Model model ) {
+    public void list( PageRequest pageRequest, Model model ) {
+
         log.info("list");
-        model.addAttribute("list", boardService.getList(pageRequest));
+        model.addAttribute("result", boardService.getList(pageRequest));
+
     }
 
 }
