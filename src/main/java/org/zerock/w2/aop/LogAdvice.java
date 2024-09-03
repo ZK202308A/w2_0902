@@ -8,6 +8,8 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
 
+import java.util.Arrays;
+
 @Aspect
 @Component
 @Log4j2
@@ -17,6 +19,9 @@ public class LogAdvice {
     public void logBefore(JoinPoint joinPoint) {
         log.info("--------------------------------");
         log.info("--------------------------------");
+
+        log.info(Arrays.toString(joinPoint.getArgs()));
+
         log.info("--------------------------------");
         log.info("--------------------------------");
     }
