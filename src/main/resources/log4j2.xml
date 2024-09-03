@@ -12,10 +12,10 @@
 
     <!-- Logger 설정 -->
     <Loggers>
-        <Logger name="com.zaxxer" level="info" additivity="false">
+        <Logger name="com.zaxxer" level="INFO" additivity="false">
             <AppenderRef ref="console"/>
         </Logger>
-        <Logger name="org.springframework.web" level="DEBUG" additivity="false">
+        <Logger name="org.springframework" level="INFO" additivity="false">
             <AppenderRef ref="console"/>
         </Logger>
         

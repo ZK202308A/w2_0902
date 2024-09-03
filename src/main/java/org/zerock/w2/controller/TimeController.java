@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.zerock.w2.service.TimeService;
 
+import java.util.UUID;
+
 @Controller
 @Log4j2
 @RequiredArgsConstructor
@@ -19,6 +21,13 @@ public class TimeController {
         log.info(timeService.getClass().getName());
         log.info(timeService.getTime());
         log.info("time");
+
+        UUID uuid = UUID.randomUUID();
+        String str = uuid.toString();
+        log.info(str);
+
+        timeService.insertAll(str);
+
     }
 
 }
