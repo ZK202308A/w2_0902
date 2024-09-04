@@ -29,6 +29,8 @@ public class BoardController {
 
         log.info(dto);
 
+        boardService.register(dto);
+
         return "redirect:/board/list";
 
     }
