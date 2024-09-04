@@ -9,9 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="003b2ec7-9b76-4f17-90d0-35e459c5b8aa" name="Changes" comment="0904 - 3rd">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/w2/util/UploadUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="003b2ec7-9b76-4f17-90d0-35e459c5b8aa" name="Changes" comment="0904 - 4th">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w2/controller/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/w2/controller/UploadController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -346,7 +344,7 @@
       <workItem from="1725251776773" duration="11404000" />
       <workItem from="1725266601208" duration="809000" />
       <workItem from="1725320024515" duration="24298000" />
-      <workItem from="1725407781342" duration="16249000" />
+      <workItem from="1725407781342" duration="16567000" />
     </task>
     <task id="LOCAL-00001" summary="1st MyBatis config">
       <option name="closed" value="true" />
@@ -452,7 +450,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725425270835</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="0904 - 4th">
+      <option name="closed" value="true" />
+      <created>1725428155060</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1725428155060</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -470,6 +476,7 @@
     <MESSAGE value="0904 - 1st" />
     <MESSAGE value="0904 - 2nd" />
     <MESSAGE value="0904 - 3rd" />
-    <option name="LAST_COMMIT_MESSAGE" value="0904 - 3rd" />
+    <MESSAGE value="0904 - 4th" />
+    <option name="LAST_COMMIT_MESSAGE" value="0904 - 4th" />
   </component>
 </project>

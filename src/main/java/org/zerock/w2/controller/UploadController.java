@@ -4,62 +4,34 @@ import lombok.extern.log4j.Log4j2;
 import net.coobird.thumbnailator.Thumbnailator;
 import net.coobird.thumbnailator.Thumbnails;
 import net.coobird.thumbnailator.util.ThumbnailatorUtils;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
+import org.zerock.w2.util.UploadUtil;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.List;
 import java.util.UUID;
 
-@Controller
+@RestController
 @RequestMapping("/upload")
 @Log4j2
 public class UploadController {
 
-
-
     @PostMapping("")
-    public void upload(MultipartFile[] files) {
+    public ResponseEntity<List<String>> upload(MultipartFile[] files) {
 
         log.info("------------------------");
         log.info(Arrays.toString(files));
 
-        if(files != null && files.length > 0) {
-            for (MultipartFile file : files) {
+        List<String> uploadNames = UploadUtil.upload(files);
 
-                log.info(file.getName());
-                log.info(file.getContentType());
-                log.info(file.getSize());
-                log.info("------------------------------");
-
-                String fileName = file.getOriginalFilename();
-
-                String saveFileName = UUID.randomUUID().toString() +"_" + fileName;
-
-                File copyFile = new File(folder, saveFileName);
-
-                try {
-                    FileCopyUtils.copy(file.getBytes(), copyFile);
-
-                    //이미지 파일 이라면 썸네일 생성해라
-                    if(file.getContentType().startsWith("image")) {
-
-                        Thumbnails.of(copyFile)
-                                .size(160, 160)
-                                .toFile(new File(folder, "s_" +saveFileName));
-
-
-                    }
-
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
-
-            }//end for
-        }//end if
+        return ResponseEntity.ok(uploadNames);
     }
 }
