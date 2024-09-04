@@ -1,6 +1,7 @@
 package org.zerock.w2.service;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.zerock.w2.mapper.ReplyMapper;
@@ -11,6 +12,7 @@ import org.zerock.w2.vo.ReplyVO;
 @Service
 @Transactional
 @RequiredArgsConstructor
+@Log4j2
 public class ReplyService {
 
     private final ReplyMapper replyMapper;

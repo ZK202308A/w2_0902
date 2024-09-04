@@ -23,6 +23,8 @@ public class ReplyController {
     public ResponseEntity<PageResponse<ReplyVO>> list(
             @PathVariable("bno") Long bno, PageRequest pageRequest) {
 
+        log.info(replyService.getList(bno,pageRequest));
+
         return ResponseEntity.ok(replyService.getList(bno,pageRequest));
     }
 
