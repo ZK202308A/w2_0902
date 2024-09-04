@@ -1219,7 +1219,7 @@ bootdb2|schema||bootdb2user||UPDATE|G</Grants>
     </collation>
     <schema id="510" parent="1" name="bootdb2">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-09-03.06:36:56</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-09-04.00:29:14</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_uca1400_ai_ci</CollationName>
     </schema>
     <schema id="511" parent="1" name="information_schema">
@@ -1301,7 +1301,7 @@ bootdb2|schema||bootdb2user||UPDATE|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="529" parent="516" name="rno">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>12</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int(11)|0s</StoredType>
