@@ -3,6 +3,7 @@ package org.zerock.w2.mapper;
 
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Update;
+import org.zerock.w2.dto.BoardListDTO;
 import org.zerock.w2.vo.BoardVO;
 import org.zerock.w2.vo.PageRequest;
 
@@ -11,6 +12,8 @@ import java.util.Optional;
 public interface BoardMapper  {
 
     java.util.List<BoardVO> list(PageRequest pageRequest);
+
+    java.util.List<BoardListDTO> listImage(PageRequest pageRequest);
 
     int count(PageRequest pageRequest);
 
