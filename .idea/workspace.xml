@@ -9,10 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="003b2ec7-9b76-4f17-90d0-35e459c5b8aa" name="Changes" comment="0905 - 1st">
+    <list default="true" id="003b2ec7-9b76-4f17-90d0-35e459c5b8aa" name="Changes" comment="0905 - 2nd-1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/w2/dto/BoardReadDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w2/mapper/BoardMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/w2/mapper/BoardMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w2/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/w2/service/BoardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/BoardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/BoardMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/read.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/read.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/register.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -347,7 +352,7 @@
       <workItem from="1725266601208" duration="809000" />
       <workItem from="1725320024515" duration="24298000" />
       <workItem from="1725407781342" duration="25422000" />
-      <workItem from="1725495647511" duration="3603000" />
+      <workItem from="1725495647511" duration="8112000" />
     </task>
     <task id="LOCAL-00001" summary="1st MyBatis config">
       <option name="closed" value="true" />
@@ -493,7 +498,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725497734151</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="0905 - 2nd-1">
+      <option name="closed" value="true" />
+      <created>1725499312701</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1725499312701</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -515,6 +528,7 @@
     <MESSAGE value="0904 - 5th" />
     <MESSAGE value="0904 - 6th" />
     <MESSAGE value="0905 - 1st" />
-    <option name="LAST_COMMIT_MESSAGE" value="0905 - 1st" />
+    <MESSAGE value="0905 - 2nd-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="0905 - 2nd-1" />
   </component>
 </project>

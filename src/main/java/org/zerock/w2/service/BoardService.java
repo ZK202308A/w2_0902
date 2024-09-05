@@ -5,6 +5,7 @@ import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.zerock.w2.dto.BoardListDTO;
+import org.zerock.w2.dto.BoardReadDTO;
 import org.zerock.w2.dto.BoardRegisterDTO;
 import org.zerock.w2.exception.DataNotFoundException;
 import org.zerock.w2.mapper.BoardMapper;
@@ -60,7 +61,7 @@ public class BoardService {
         return pageResponse;
     }
 
-    public BoardVO getOne(Long bno) {
+    public BoardReadDTO getOne(Long bno) {
 
         return boardMapper.select(bno).orElseThrow(
                 () -> new DataNotFoundException(bno+" not found "));

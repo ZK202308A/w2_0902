@@ -26,8 +26,23 @@
     select count(bno) from tbl_board
   </select>
 
-  <select id="select" resultType="BoardVO">
-    select * from tbl_board where bno = #{bno}
+  <resultMap id="readMap" type="BoardReadDTO">
+    <id property="bno" column="bno"></id>
+    <result property="title" column="title"></result>
+    <collection property="fileNames" resultMap="fileNameMap"></collection>
+  </resultMap>
+
+  <resultMap id="fileNameMap" type="string">
+    <result column="fileName"></result>
+  </resultMap>
+
+  <select id="select" resultMap="readMap">
+    select
+    b.bno, b.title, b.content, b.writer, b.regDate,
+    b.modDate, a.fileName
+    from tbl_board b left join tbl_board_attach a on a.bno = b.bno
+    where a.bno = #{bno}
+    order by a.ord asc
   </select>
   
   <insert id="insert"  >

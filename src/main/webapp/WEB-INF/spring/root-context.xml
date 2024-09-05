@@ -35,7 +35,7 @@
     <context:component-scan base-package="org.zerock.w2.service"></context:component-scan>
     <context:component-scan base-package="org.zerock.w2.aop"></context:component-scan>
 
-    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+<!--    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>-->
 
     <tx:annotation-driven></tx:annotation-driven>
 
