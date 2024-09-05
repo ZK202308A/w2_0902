@@ -9,12 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="003b2ec7-9b76-4f17-90d0-35e459c5b8aa" name="Changes" comment="0905 - 2nd-2">
+    <list default="true" id="003b2ec7-9b76-4f17-90d0-35e459c5b8aa" name="Changes" comment="0905 - 3rd-1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/w2/controller/SampleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/security-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sample/admin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sample/all.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sample/member.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w2/vo/PageRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/w2/vo/PageRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/BoardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/BoardMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/zerock/w2/mapper/ReplyMapperTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/zerock/w2/mapper/ReplyMapperTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,10 +64,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="spring-beans.schema" />
         <option value="Interface" />
-        <option value="Jsp File" />
+        <option value="spring-beans.schema" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -339,11 +343,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.w2 [clean]" />
         <item itemvalue="JUnit.ReplyMapperTests.testBoardList" />
         <item itemvalue="JUnit.ReplyMapperTests.testList" />
         <item itemvalue="JUnit.ReplyMapperTests.testInsert" />
         <item itemvalue="Gradle.w2 [build]" />
-        <item itemvalue="Gradle.w2 [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -368,7 +372,7 @@
       <workItem from="1725266601208" duration="809000" />
       <workItem from="1725320024515" duration="24298000" />
       <workItem from="1725407781342" duration="25422000" />
-      <workItem from="1725495647511" duration="15133000" />
+      <workItem from="1725495647511" duration="20218000" />
     </task>
     <task id="LOCAL-00001" summary="1st MyBatis config">
       <option name="closed" value="true" />
@@ -530,7 +534,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725504689036</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="0905 - 3rd-1">
+      <option name="closed" value="true" />
+      <created>1725515238430</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1725515238430</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,6 +566,7 @@
     <MESSAGE value="0905 - 1st" />
     <MESSAGE value="0905 - 2nd-1" />
     <MESSAGE value="0905 - 2nd-2" />
-    <option name="LAST_COMMIT_MESSAGE" value="0905 - 2nd-2" />
+    <MESSAGE value="0905 - 3rd-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="0905 - 3rd-1" />
   </component>
 </project>
