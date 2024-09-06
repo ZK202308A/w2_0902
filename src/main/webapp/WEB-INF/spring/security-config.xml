@@ -2,16 +2,22 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:security="http://www.springframework.org/schema/security"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/security https://www.springframework.org/schema/security/spring-security.xsd">
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/security https://www.springframework.org/schema/security/spring-security.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean name="passwordEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"></bean>
 
     <bean name="customAccessHandler" class="org.zerock.w2.security.handler.CustomAccessDeniedHandler"></bean>
 
+    <context:component-scan base-package="org.zerock.w2.security"></context:component-scan>
+
     <security:http>
 
         <security:csrf disabled="true"></security:csrf>
         <security:form-login login-page="/customLogin" login-processing-url="/login"></security:form-login>
+
+        <security:logout></security:logout>
+<!--        <security:form-login></security:form-login>-->
 
         <security:intercept-url
                 pattern="/sample/member"
@@ -26,11 +32,8 @@
     </security:http>
 
     <security:authentication-manager>
-        <security:authentication-provider>
-            <security:user-service>
-                <security:user name="user1" password="$2a$12$p.ctT9yNUg9ZJumWeK64VOipauap/wTQMp7z.kj6YgpcM2IEldMui" authorities="ROLE_MEMBER"></security:user>
-                <security:user name="admin1" password="$2a$12$p.ctT9yNUg9ZJumWeK64VOipauap/wTQMp7z.kj6YgpcM2IEldMui" authorities="ROLE_MEMBER,ROLE_ADMIN"></security:user>
-            </security:user-service>
+        <security:authentication-provider user-service-ref="customDetails" >
+
         </security:authentication-provider>
     </security:authentication-manager>
 
