@@ -9,12 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="003b2ec7-9b76-4f17-90d0-35e459c5b8aa" name="Changes" comment="0905 - 6th">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/w2/dto/MemberDTO.java" afterDir="false" />
+    <list default="true" id="003b2ec7-9b76-4f17-90d0-35e459c5b8aa" name="Changes" comment="0905 - 7th">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w2/mapper/MemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/w2/mapper/MemberMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/MemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/MemberMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/zerock/w2/mapper/MemberMapperTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/zerock/w2/mapper/MemberMapperTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w2/dto/MemberDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/w2/dto/MemberDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w2/security/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/w2/security/CustomUserDetailsService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +106,7 @@
   "keyToString": {
     "Gradle.Build w2.executor": "Run",
     "Gradle.MemberMapperTests.test1.executor": "Run",
+    "Gradle.MemberMapperTests.testGetMember.executor": "Run",
     "Gradle.w2 [build].executor": "Run",
     "Gradle.w2 [clean].executor": "Run",
     "JUnit.ReplyMapperTests.testBoardList.executor": "Run",
@@ -149,7 +148,7 @@
       <recent name="D:\zzz1\w2\src\main\resources\mappers" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MemberMapperTests.testGetMember">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.931">
     <configuration name="MemberMapperTests.test1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -382,7 +381,7 @@
       <workItem from="1725495647511" duration="21560000" />
       <workItem from="1725529547479" duration="527000" />
       <workItem from="1725540386483" duration="124000" />
-      <workItem from="1725580071793" duration="16754000" />
+      <workItem from="1725580071793" duration="19322000" />
     </task>
     <task id="LOCAL-00001" summary="1st MyBatis config">
       <option name="closed" value="true" />
@@ -608,7 +607,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725601054736</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="0905 - 7th">
+      <option name="closed" value="true" />
+      <created>1725602182139</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1725602182139</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -639,6 +646,7 @@
     <MESSAGE value="0905 - 4th" />
     <MESSAGE value="0905 - 5th" />
     <MESSAGE value="0905 - 6th" />
-    <option name="LAST_COMMIT_MESSAGE" value="0905 - 6th" />
+    <MESSAGE value="0905 - 7th" />
+    <option name="LAST_COMMIT_MESSAGE" value="0905 - 7th" />
   </component>
 </project>

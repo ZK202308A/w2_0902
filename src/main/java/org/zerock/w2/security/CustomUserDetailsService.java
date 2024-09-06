@@ -7,6 +7,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+import org.zerock.w2.dto.MemberDTO;
+import org.zerock.w2.mapper.MemberMapper;
 import org.zerock.w2.mapper.TimeMapper;
 
 @Log4j2
@@ -15,6 +17,7 @@ import org.zerock.w2.mapper.TimeMapper;
 public class CustomUserDetailsService implements UserDetailsService {
 
     private final TimeMapper timeMapper;
+    private final MemberMapper memberMapper;
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -23,9 +26,14 @@ public class CustomUserDetailsService implements UserDetailsService {
         log.info("---------------------------------");
         log.info("loadUserByUsername: " + username);
         log.info(timeMapper.getTime());
+
+        MemberDTO memberDTO = memberMapper.getMember(username);
+
+        log.info(memberDTO);
+
         log.info("---------------------------------");
         log.info("---------------------------------");
 
-        return null;
+        return memberDTO;
     }
 }
