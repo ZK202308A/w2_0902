@@ -9,11 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="003b2ec7-9b76-4f17-90d0-35e459c5b8aa" name="Changes" comment="0905 - 4th">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/w2/security/CustomUserDetailsService.java" afterDir="false" />
+    <list default="true" id="003b2ec7-9b76-4f17-90d0-35e459c5b8aa" name="Changes" comment="0905 - 5th">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/w2/mapper/MemberMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/w2/vo/MemberVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/MemberMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/zerock/w2/mapper/MemberMapperTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/651cfdb5-dda2-4f21-b5fc-9d6f707a3934.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/651cfdb5-dda2-4f21-b5fc-9d6f707a3934.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/security-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/security-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,9 +62,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="spring-beans.schema" />
         <option value="Jsp File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -103,37 +106,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build w2.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.w2 [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.w2 [clean].executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ReplyMapperTests.testBoardList.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ReplyMapperTests.testInsert.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ReplyMapperTests.testList.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Tomcat Server.Tomcat 9.0.931.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/zzz1/w2/src/main/webapp/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build w2.executor": "Run",
+    "Gradle.MemberMapperTests.test1.executor": "Run",
+    "Gradle.w2 [build].executor": "Run",
+    "Gradle.w2 [clean].executor": "Run",
+    "JUnit.ReplyMapperTests.testBoardList.executor": "Run",
+    "JUnit.ReplyMapperTests.testInsert.executor": "Run",
+    "JUnit.ReplyMapperTests.testList.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Tomcat Server.Tomcat 9.0.931.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/zzz1/w2/src/main/webapp/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mariadb&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mariadb"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\zzz1\w2\src\main\webapp\resources" />
@@ -147,27 +151,29 @@
       <recent name="D:\zzz1\w2\src\main\resources\mappers" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.931">
-    <configuration name="w2 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.MemberMapperTests.test1">
+    <configuration name="MemberMapperTests.test1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.zerock.w2.mapper.MemberMapperTests.test1&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="w2 [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -329,7 +335,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.w2 [build]" />
+      <item itemvalue="Gradle.MemberMapperTests.test1" />
       <item itemvalue="Gradle.w2 [clean]" />
       <item itemvalue="JUnit.ReplyMapperTests.testBoardList" />
       <item itemvalue="JUnit.ReplyMapperTests.testList" />
@@ -338,11 +344,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MemberMapperTests.test1" />
         <item itemvalue="Gradle.w2 [clean]" />
         <item itemvalue="JUnit.ReplyMapperTests.testBoardList" />
         <item itemvalue="JUnit.ReplyMapperTests.testList" />
         <item itemvalue="JUnit.ReplyMapperTests.testInsert" />
-        <item itemvalue="Gradle.w2 [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -370,7 +376,7 @@
       <workItem from="1725495647511" duration="21560000" />
       <workItem from="1725529547479" duration="527000" />
       <workItem from="1725540386483" duration="124000" />
-      <workItem from="1725580071793" duration="12719000" />
+      <workItem from="1725580071793" duration="15189000" />
     </task>
     <task id="LOCAL-00001" summary="1st MyBatis config">
       <option name="closed" value="true" />
@@ -580,7 +586,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725589973316</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="0905 - 5th">
+      <option name="closed" value="true" />
+      <created>1725597961532</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1725597961532</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -609,6 +623,7 @@
     <MESSAGE value="0905 - 2nd" />
     <MESSAGE value="0905 - 3rd" />
     <MESSAGE value="0905 - 4th" />
-    <option name="LAST_COMMIT_MESSAGE" value="0905 - 4th" />
+    <MESSAGE value="0905 - 5th" />
+    <option name="LAST_COMMIT_MESSAGE" value="0905 - 5th" />
   </component>
 </project>
