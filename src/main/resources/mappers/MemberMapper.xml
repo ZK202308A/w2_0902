@@ -12,4 +12,24 @@
         insert into tbl_member_role (mid, role)
         values (#{mid}, #{role})
     </insert>
+
+    <resultMap id="readMap" type="MemberDTO">
+        <id property="mid" column="mid"></id>
+        <result property="mpw" column="mpw"></result>
+        <result property="mname" column="mname"></result>
+        <collection property="roles" resultMap="rolesMap"></collection>
+    </resultMap>
+
+    <resultMap id="rolesMap" type="string">
+        <result column="role"></result>
+    </resultMap>
+
+    <select id="getMember" resultMap="readMap">
+        select m.mid, mpw, mname, role
+        from
+        tbl_member m inner join tbl_member_role r on r.mid = m.mid
+        where
+        m.mid = #{mid}
+    </select>
+
 </mapper>

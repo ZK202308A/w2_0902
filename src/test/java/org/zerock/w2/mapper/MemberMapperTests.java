@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
+import org.zerock.w2.dto.MemberDTO;
 import org.zerock.w2.vo.MemberVO;
 
 import java.util.ArrayList;
@@ -59,5 +60,16 @@ public class MemberMapperTests {
 
         }//end for
     }
+
+    @Test
+    public void testGetMember() {
+        String mid ="user90";
+
+        MemberDTO memberDTO = memberMapper.getMember(mid);
+
+        log.info(memberDTO);
+
+    }
+
 
 }
