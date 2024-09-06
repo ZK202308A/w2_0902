@@ -9,10 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="003b2ec7-9b76-4f17-90d0-35e459c5b8aa" name="Changes" comment="0905 - 7th">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w2/dto/MemberDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/w2/dto/MemberDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/w2/security/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/w2/security/CustomUserDetailsService.java" afterDir="false" />
+    <list default="true" id="003b2ec7-9b76-4f17-90d0-35e459c5b8aa" name="Changes" comment="0905 - 8th">
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/security-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/security-config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -381,7 +379,7 @@
       <workItem from="1725495647511" duration="21560000" />
       <workItem from="1725529547479" duration="527000" />
       <workItem from="1725540386483" duration="124000" />
-      <workItem from="1725580071793" duration="19322000" />
+      <workItem from="1725580071793" duration="19423000" />
     </task>
     <task id="LOCAL-00001" summary="1st MyBatis config">
       <option name="closed" value="true" />
@@ -615,14 +613,21 @@
       <option name="project" value="LOCAL" />
       <updated>1725602182139</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="0905 - 8th">
+      <option name="closed" value="true" />
+      <created>1725604990521</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1725604990521</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1st MyBatis config" />
     <MESSAGE value="2st Web Setting" />
     <MESSAGE value="3rd Web Setting" />
     <MESSAGE value="0903 - 1st" />
@@ -647,6 +652,7 @@
     <MESSAGE value="0905 - 5th" />
     <MESSAGE value="0905 - 6th" />
     <MESSAGE value="0905 - 7th" />
-    <option name="LAST_COMMIT_MESSAGE" value="0905 - 7th" />
+    <MESSAGE value="0905 - 8th" />
+    <option name="LAST_COMMIT_MESSAGE" value="0905 - 8th" />
   </component>
 </project>
