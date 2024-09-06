@@ -9,8 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="003b2ec7-9b76-4f17-90d0-35e459c5b8aa" name="Changes" comment="0905 - 1st">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/w2/security/handler/CustomAccessDeniedHandler.java" afterDir="false" />
+    <list default="true" id="003b2ec7-9b76-4f17-90d0-35e459c5b8aa" name="Changes" comment="0905 - 2nd">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/zerock/w2/controller/Error403Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error403.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/security-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/security-config.xml" afterDir="false" />
     </list>
@@ -60,8 +61,8 @@
       <list>
         <option value="Interface" />
         <option value="spring-beans.schema" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -369,7 +370,7 @@
       <workItem from="1725495647511" duration="21560000" />
       <workItem from="1725529547479" duration="527000" />
       <workItem from="1725540386483" duration="124000" />
-      <workItem from="1725580071793" duration="5372000" />
+      <workItem from="1725580071793" duration="6571000" />
     </task>
     <task id="LOCAL-00001" summary="1st MyBatis config">
       <option name="closed" value="true" />
@@ -555,7 +556,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725584031736</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="0905 - 2nd">
+      <option name="closed" value="true" />
+      <created>1725586340131</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1725586340131</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -581,6 +590,7 @@
     <MESSAGE value="0905 - 3rd-1" />
     <MESSAGE value="0905 - 4th-1" />
     <MESSAGE value="0905 - 1st" />
-    <option name="LAST_COMMIT_MESSAGE" value="0905 - 1st" />
+    <MESSAGE value="0905 - 2nd" />
+    <option name="LAST_COMMIT_MESSAGE" value="0905 - 2nd" />
   </component>
 </project>

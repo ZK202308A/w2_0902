@@ -20,7 +20,7 @@
                 pattern="/sample/admin"
                 access="hasRole('ROLE_ADMIN')"/>
 
-        <security:access-denied-handler ref="customAccessHandler"></security:access-denied-handler>
+        <security:access-denied-handler error-page="/error403"></security:access-denied-handler>
 
     </security:http>
 
