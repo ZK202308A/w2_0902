@@ -40,6 +40,7 @@ public class BoardController {
 
     }
 
+    @PreAuthorize("principal.username == #dto.writer ")
     @PostMapping("register")
     public String register(BoardRegisterDTO dto, RedirectAttributes rttr) {
 
