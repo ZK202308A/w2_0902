@@ -17,19 +17,15 @@
         <security:form-login login-page="/customLogin" login-processing-url="/login"></security:form-login>
 
         <security:logout></security:logout>
-<!--        <security:form-login></security:form-login>-->
-
-        <security:intercept-url
-                pattern="/sample/member"
-                access="hasRole('ROLE_MANAGER')"/>
-
-        <security:intercept-url
-                pattern="/sample/admin"
-                access="hasRole('ROLE_ADMIN')"/>
 
         <security:access-denied-handler error-page="/error403"></security:access-denied-handler>
 
+        <security:remember-me data-source-ref="dataSource" token-validity-seconds="604800"></security:remember-me>
+
+
     </security:http>
+
+
 
     <security:authentication-manager>
         <security:authentication-provider user-service-ref="customDetails" >

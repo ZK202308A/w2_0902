@@ -1219,230 +1219,264 @@ bootdb2|schema||bootdb2user||UPDATE|G</Grants>
     </collation>
     <schema id="510" parent="1" name="bootdb2">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-09-06.04:56:31</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-09-06.07:13:23</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_uca1400_ai_ci</CollationName>
     </schema>
     <schema id="511" parent="1" name="information_schema">
       <CollationName>utf8mb3_general_ci</CollationName>
     </schema>
     <user id="512" parent="1" name="bootdb2user"/>
-    <table id="513" parent="510" name="tbl_board">
+    <table id="513" parent="510" name="persistent_logins">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_uca1400_ai_ci</CollationName>
     </table>
-    <table id="514" parent="510" name="tbl_board_attach">
+    <table id="514" parent="510" name="tbl_board">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_uca1400_ai_ci</CollationName>
     </table>
-    <table id="515" parent="510" name="tbl_member">
+    <table id="515" parent="510" name="tbl_board_attach">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_uca1400_ai_ci</CollationName>
     </table>
-    <table id="516" parent="510" name="tbl_member_role">
+    <table id="516" parent="510" name="tbl_member">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_uca1400_ai_ci</CollationName>
     </table>
-    <table id="517" parent="510" name="tbl_reply">
+    <table id="517" parent="510" name="tbl_member_role">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_uca1400_ai_ci</CollationName>
     </table>
-    <table id="518" parent="510" name="tbl_todos">
+    <table id="518" parent="510" name="tbl_reply">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_uca1400_ai_ci</CollationName>
     </table>
-    <column id="519" parent="513" name="bno">
+    <table id="519" parent="510" name="tbl_todos">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_uca1400_ai_ci</CollationName>
+    </table>
+    <column id="520" parent="513" name="username">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="521" parent="513" name="series">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="522" parent="513" name="token">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(64)|0s</StoredType>
+    </column>
+    <column id="523" parent="513" name="last_used">
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="524" parent="513" name="PRIMARY">
+      <ColNames>series</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="525" parent="513" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="526" parent="514" name="bno">
       <AutoIncrement>3702</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int(11)|0s</StoredType>
     </column>
-    <column id="520" parent="513" name="title">
+    <column id="527" parent="514" name="title">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>varchar(300)|0s</StoredType>
     </column>
-    <column id="521" parent="513" name="content">
+    <column id="528" parent="514" name="content">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>text|0s</StoredType>
     </column>
-    <column id="522" parent="513" name="writer">
+    <column id="529" parent="514" name="writer">
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StoredType>varchar(50)|0s</StoredType>
     </column>
-    <column id="523" parent="513" name="regDate">
+    <column id="530" parent="514" name="regDate">
       <DefaultExpression>current_timestamp()</DefaultExpression>
       <Position>5</Position>
       <StoredType>timestamp|0s</StoredType>
     </column>
-    <column id="524" parent="513" name="modDate">
+    <column id="531" parent="514" name="modDate">
       <DefaultExpression>current_timestamp()</DefaultExpression>
       <Position>6</Position>
       <StoredType>timestamp|0s</StoredType>
     </column>
-    <column id="525" parent="513" name="replyCnt">
+    <column id="532" parent="514" name="replyCnt">
       <DefaultExpression>0</DefaultExpression>
       <Position>7</Position>
       <StoredType>int(11)|0s</StoredType>
     </column>
-    <index id="526" parent="513" name="PRIMARY">
+    <index id="533" parent="514" name="PRIMARY">
       <ColNames>bno</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="527" parent="513" name="PRIMARY">
+    <key id="534" parent="514" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="528" parent="514" name="bno">
+    <column id="535" parent="515" name="bno">
       <Position>1</Position>
       <StoredType>int(11)|0s</StoredType>
     </column>
-    <column id="529" parent="514" name="fileName">
+    <column id="536" parent="515" name="fileName">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>varchar(200)|0s</StoredType>
     </column>
-    <column id="530" parent="514" name="ord">
+    <column id="537" parent="515" name="ord">
       <DefaultExpression>0</DefaultExpression>
       <Position>3</Position>
       <StoredType>int(11)|0s</StoredType>
     </column>
-    <foreign-key id="531" parent="514" name="fk_board">
+    <foreign-key id="538" parent="515" name="fk_board">
       <ColNames>bno</ColNames>
       <RefColNames>bno</RefColNames>
       <RefTableName>tbl_board</RefTableName>
     </foreign-key>
-    <index id="532" parent="514" name="idx_board">
+    <index id="539" parent="515" name="idx_board">
       <ColNames>bno
 ord</ColNames>
       <ReverseColNames>bno</ReverseColNames>
       <Type>btree</Type>
     </index>
-    <column id="533" parent="515" name="mid">
+    <column id="540" parent="516" name="mid">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>varchar(100)|0s</StoredType>
     </column>
-    <column id="534" parent="515" name="mpw">
+    <column id="541" parent="516" name="mpw">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>varchar(100)|0s</StoredType>
     </column>
-    <column id="535" parent="515" name="mname">
+    <column id="542" parent="516" name="mname">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>varchar(100)|0s</StoredType>
     </column>
-    <index id="536" parent="515" name="PRIMARY">
+    <index id="543" parent="516" name="PRIMARY">
       <ColNames>mid</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="537" parent="515" name="PRIMARY">
+    <key id="544" parent="516" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="538" parent="516" name="mid">
+    <column id="545" parent="517" name="mid">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>varchar(100)|0s</StoredType>
     </column>
-    <column id="539" parent="516" name="role">
+    <column id="546" parent="517" name="role">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>varchar(50)|0s</StoredType>
     </column>
-    <foreign-key id="540" parent="516" name="fk_member">
+    <foreign-key id="547" parent="517" name="fk_member">
       <ColNames>mid</ColNames>
       <RefColNames>mid</RefColNames>
       <RefTableName>tbl_member</RefTableName>
     </foreign-key>
-    <index id="541" parent="516" name="fk_member">
+    <index id="548" parent="517" name="fk_member">
       <ColNames>mid</ColNames>
       <Type>btree</Type>
     </index>
-    <column id="542" parent="517" name="rno">
+    <column id="549" parent="518" name="rno">
       <AutoIncrement>14</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int(11)|0s</StoredType>
     </column>
-    <column id="543" parent="517" name="bno">
+    <column id="550" parent="518" name="bno">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>int(11)|0s</StoredType>
     </column>
-    <column id="544" parent="517" name="reply">
+    <column id="551" parent="518" name="reply">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>varchar(500)|0s</StoredType>
     </column>
-    <column id="545" parent="517" name="replyer">
+    <column id="552" parent="518" name="replyer">
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StoredType>varchar(50)|0s</StoredType>
     </column>
-    <column id="546" parent="517" name="regDate">
+    <column id="553" parent="518" name="regDate">
       <DefaultExpression>current_timestamp()</DefaultExpression>
       <Position>5</Position>
       <StoredType>timestamp|0s</StoredType>
     </column>
-    <column id="547" parent="517" name="modDate">
+    <column id="554" parent="518" name="modDate">
       <DefaultExpression>current_timestamp()</DefaultExpression>
       <Position>6</Position>
       <StoredType>timestamp|0s</StoredType>
     </column>
-    <foreign-key id="548" parent="517" name="fk_board_reply">
+    <foreign-key id="555" parent="518" name="fk_board_reply">
       <ColNames>bno</ColNames>
       <RefColNames>bno</RefColNames>
       <RefTableName>tbl_board</RefTableName>
     </foreign-key>
-    <index id="549" parent="517" name="PRIMARY">
+    <index id="556" parent="518" name="PRIMARY">
       <ColNames>rno</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="550" parent="517" name="idx_board">
+    <index id="557" parent="518" name="idx_board">
       <ColNames>bno
 rno</ColNames>
       <ReverseColNames>bno</ReverseColNames>
       <Type>btree</Type>
     </index>
-    <key id="551" parent="517" name="PRIMARY">
+    <key id="558" parent="518" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="552" parent="518" name="mno">
+    <column id="559" parent="519" name="mno">
       <AutoIncrement>1</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>bigint(20)|0s</StoredType>
     </column>
-    <column id="553" parent="518" name="due_date">
+    <column id="560" parent="519" name="due_date">
       <Position>2</Position>
       <StoredType>date|0s</StoredType>
     </column>
-    <column id="554" parent="518" name="title">
+    <column id="561" parent="519" name="title">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>varchar(500)|0s</StoredType>
     </column>
-    <column id="555" parent="518" name="writer">
+    <column id="562" parent="519" name="writer">
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StoredType>varchar(500)|0s</StoredType>
     </column>
-    <index id="556" parent="518" name="PRIMARY">
+    <index id="563" parent="519" name="PRIMARY">
       <ColNames>mno</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="557" parent="518" name="PRIMARY">
+    <key id="564" parent="519" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

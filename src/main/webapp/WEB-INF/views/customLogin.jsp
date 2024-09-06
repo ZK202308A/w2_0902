@@ -22,6 +22,9 @@
       <input type="password" name="password">
     </div>
     <div>
+      <input type="checkbox" name="remember-me">자동 로그인
+    </div>
+    <div>
       <button>LOGIN</button>
     </div>
   </form>
