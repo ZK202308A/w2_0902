@@ -6,6 +6,8 @@
 
     <bean name="passwordEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"></bean>
 
+    <bean name="customAccessHandler" class="org.zerock.w2.security.handler.CustomAccessDeniedHandler"></bean>
+
     <security:http>
 
         <security:form-login></security:form-login>
@@ -14,6 +16,11 @@
                 pattern="/sample/member"
                 access="hasRole('ROLE_MEMBER')"/>
 
+        <security:intercept-url
+                pattern="/sample/admin"
+                access="hasRole('ROLE_ADMIN')"/>
+
+        <security:access-denied-handler ref="customAccessHandler"></security:access-denied-handler>
 
     </security:http>
 
@@ -21,6 +28,7 @@
         <security:authentication-provider>
             <security:user-service>
                 <security:user name="user1" password="$2a$12$p.ctT9yNUg9ZJumWeK64VOipauap/wTQMp7z.kj6YgpcM2IEldMui" authorities="ROLE_MEMBER"></security:user>
+                <security:user name="admin1" password="$2a$12$p.ctT9yNUg9ZJumWeK64VOipauap/wTQMp7z.kj6YgpcM2IEldMui" authorities="ROLE_MEMBER,ROLE_ADMIN"></security:user>
             </security:user-service>
         </security:authentication-provider>
     </security:authentication-manager>
